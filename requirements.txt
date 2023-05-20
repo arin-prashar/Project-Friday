@@ -1,11 +1,11 @@
 # all imported files from main.py,mail.py,audio.py,app.py for a requirment.txt file 
-pyaudio==0.2.11
-speechrecognition==3.8.1
-pyttsx3==2.90
-os-sys==2.1.4
-bardapi==0.3.6
-time==2.0.0
-dotenv==0.0.5
-google-api-python-client==2.0.2
-google-auth-httplib2==0.1.0
-google-auth-oauthlib==0.4.4
+pyaudio>=0.2.11
+speechrecognition>=3.10.0
+pyttsx3>=2.90
+os-sys>=2.1.4
+bardapi>=0.1.8
+time>=0.1
+dotenv>=1.0.0
+google-api-python-client>=2.86.0
+google-auth-httplib2>=0.1.0
+google-auth-oauthlib>=1.0.0
