@@ -1,10 +1,8 @@
 # all imported files from main.py,mail.py,audio.py,app.py for a requirment.txt file 
-
-os==2.0.0
 pyaudio==0.2.11
 speechrecognition==3.8.1
 pyttsx3==2.90
-os-sys==2.0.0
+os-sys==2.1.4
 bardapi==0.3.6
 time==2.0.0
 dotenv==0.0.5
