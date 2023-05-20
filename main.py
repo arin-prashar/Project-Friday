@@ -3,7 +3,7 @@ import os
 import audio
 from dotenv import load_dotenv
 from audio import prompt,speak
-import mail as ms
+import mail as m
 
 load_dotenv()
 os.environ["_Bard_API_KEY"]=os.getenv("api")
@@ -37,7 +37,7 @@ def task(tsk):
         subject = audio.prompt()
         audio.speak("What is the message?")
         msg=audio.prompt()
-        ms.gmail_create_draft(to,subject,msg)
+        m.gmail_create_draft(to,subject,msg)
         audio.speak("Draft created")
     # if task contains play music play music
     elif tsk.startswith("play music"):
