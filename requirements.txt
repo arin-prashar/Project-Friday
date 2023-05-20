@@ -2,9 +2,7 @@
 pyaudio>=0.2.11
 speechrecognition>=3.10.0
 pyttsx3>=2.90
-os-sys>=2.1.4
 bardapi>=0.1.8
-dotenv>=0.0.5
 google-api-python-client>=2.86.0
 google-auth-httplib2>=0.1.0
 google-auth-oauthlib>=1.0.0
