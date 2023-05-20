@@ -3,7 +3,7 @@ import os
 import audio
 from dotenv import load_dotenv
 from audio import prompt,speak
-import mail_send as ms
+import mail as ms
 
 load_dotenv()
 os.environ["_Bard_API_KEY"]=os.getenv("api")
