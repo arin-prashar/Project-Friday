@@ -1,6 +1,6 @@
 import tkinter as tk
 import ttkbootstrap as ttk
-import Brain
+import main as Brain
 import audio
 from audio import prompt,speak
 
