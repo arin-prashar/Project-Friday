@@ -23,7 +23,7 @@ def Friday():
                 tsk = question[3:]
                 task(tsk)
             elif question.startswith("tell"):
-                res = client.query(question[5:])
+                res = client.get_answer(question)
                 audio.speak(res)
             
 def task(tsk):
