@@ -3,19 +3,24 @@ import pyttsx3
 import pyautogui
 import os
 import time
-def prompt():
+def prompt(type):
+    ask="."
+    if type == "0":
+        ask = "."
+    elif type == "1":
+        ask='What is your question?'
     r = sr.Recognizer()
     with sr.Microphone() as source:
-        print("Say something!")
+        print(ask)
         audio = r.listen(source)
     try:
+        if audio=="exit" or audio=='Exit' or audio=="EXIT":
+            return
         print(r.recognize_google(audio))
         return r.recognize_google(audio)
     except sr.UnknownValueError:
-        # print("Google Speech Recognition could not understand audio")
         return "Google Speech Recognition could not understand audio"
     except sr.RequestError as e:
-        # print("Could not request results from Google Speech Recognition service; {0}".format(e))
         return "Could not request results from Google Speech Recognition service; {0}".format(e)
 
 def speak(text):
@@ -24,13 +29,3 @@ def speak(text):
     engine.setProperty('voice', voices[1].id)
     engine.say(text)
     engine.runAndWait()
-    # return
-def write(text,file_name):
-    # os.system("notepad")
-    time.sleep(2)
-    with open(file_name+".txt","w") as f:
-        f.write(text)
-    f.close()
-    return
-
-# write(prompt(),prompt())
